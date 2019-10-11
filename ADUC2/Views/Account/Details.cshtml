@@ -1,0 +1,82 @@
+﻿@model ADUC2.Models.Account
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Account</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastLogon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastLogon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Locked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Locked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enabled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enabled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Expires)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Expires)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
